@@ -1,6 +1,6 @@
 #Math234 Course Project
-
 import networkx as nx
+
 G = nx.Graph( ) # Creates an empty graph G
 
 # Add a node
