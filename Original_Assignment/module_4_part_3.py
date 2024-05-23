@@ -9,13 +9,14 @@ PROCEDURE PART 3
 ABOVE. THE SPECIFIC NUMBERS USED AND EDGES ARE YOUR CHOICE.
 2.	RUN THE PROGRAM.
 """
-#FIXME make a smiley face?
+#TODO make a smiley face?
 import networkx as nx  
 import matplotlib.pyplot as plt 
   
 G = nx.Graph() 
 
 # Add nodes
+G.add_node(0)
 G.add_node(117)
 G.add_node(343)
 G.add_node('RC')
@@ -27,8 +28,8 @@ G.add_node(123)
 G.add_node(321)
   
 plt.figure(figsize =(9, 16)) 
-G.add_edges_from([(1, 2), (1, 3), (2, 3), (2, 4)])
-G.add_edges_from([(117, 343),('RC', 1138), (101, 38), (777, 123), (777, 321)])
+G.add_edges_from([(1, 2), (1, 3), (2, 3), (2, 4), (117, 343), ('RC', 1138), 
+                  (101, 38)])
 
 # Original Undirected Graph created 
   

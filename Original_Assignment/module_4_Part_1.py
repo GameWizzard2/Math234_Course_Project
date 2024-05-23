@@ -5,6 +5,8 @@
 # Creating a Graph
 #filename = myfirstGraph.py
 
+#TODO make all three parts into a callable class.
+
 """
 PROCEDURE PART 1
 1.	MODIFY THE EXISTING CODE BY ADDING TWO NODES TO THE GRAPH: 
