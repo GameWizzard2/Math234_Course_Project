@@ -1,6 +1,6 @@
 #Part 3. 
-#Name: Your name
-#Date: the date
+#Name: Christopher Barfield
+#Date: 6/2/24
 # Convert Undirected Graph to Directed Graph
 #filename = mythirdGraph.py
 """
@@ -9,27 +9,15 @@ PROCEDURE PART 3
 ABOVE. THE SPECIFIC NUMBERS USED AND EDGES ARE YOUR CHOICE.
 2.	RUN THE PROGRAM.
 """
-#TODO make a smiley face?
 import networkx as nx  
 import matplotlib.pyplot as plt 
   
 G = nx.Graph() 
-
-# Add nodes
-G.add_node(0)
-G.add_node(117)
-G.add_node(343)
-G.add_node('RC')
-G.add_node(1138)
-G.add_node(101)
-G.add_node(38)
-G.add_node(777)
-G.add_node(123)
-G.add_node(321)
   
 plt.figure(figsize =(9, 16)) 
-G.add_edges_from([(1, 2), (1, 3), (2, 3), (2, 4), (117, 343), ('RC', 1138), 
-                  (101, 38)])
+# Og Code G.add_edges_from([(1, 2), (1, 3), (2, 3), (2, 4)]) 
+# Modified Code, # Added nodes 5, 6, 7, 8 and edges (5, 6), (7, 8):
+G.add_edges_from([(1, 2), (1, 3), (2, 3), (2, 4), (5, 6), (7, 8)])  
 
 # Original Undirected Graph created 
   
@@ -39,5 +27,3 @@ nx.draw_networkx(G)
 H = nx.to_directed(G) 
 plt.subplot(212) 
 nx.draw_networkx(H) 
-# -*- coding: utf-8 -*-
-
